@@ -1,0 +1,319 @@
+<!-- MUHAMED MALKOČ - PROJEKAT 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b6db771c5f.js" crossorigin="anonymous"></script>
+    <title>Konverter</title>
+</head>
+<body>
+<div class="container">
+    <div class="konverter">
+        <h1>Konverter mjernih jedinica</h1>
+        <i class="fas fa-weight fa-2x fa-color"></i>
+        <div class="tekst">
+            <marquee behavior="" direction="left">
+                <p>Konvertujte željene mjerne jedinice i skratite svoj 
+                put do željenog cilja!
+                </p>
+            </marquee>
+        </div>
+        <h3>Odaberite mjernu jedinicu <br>  koju želite konvertovati</h3><br>
+        <div id="jedinice">
+            <div class="details">
+                <details>
+                    <summary class="unit">Dužina</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="duzinaInput" type="number" placeholder="Unesite dužinu (u metrima)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>km:</p>
+                                <div id="kmpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>dm: </p>
+                                <div id="dmpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>cm: </p>
+                                <div id="cmpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>mm: </p>
+                                <div id="mmpretvorba"></div>
+                            </div>
+                        </div>      
+                    </div>
+                </details>
+            </div>
+            <br>
+            <div class="details">
+                <details>
+                    <summary class="unit">Masa</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="masaInput" type="number" placeholder="Unesite masu (u kilogramima)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>t :</p>
+                                <div id="tonepretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>dkg: </p>
+                                <div id="dkgpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>gr: </p>
+                                <div id="grpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>mg: </p>
+                                <div id="mgpretvorba"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <div class="details">
+                <details>
+                    <summary class="unit">Površina</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="povrsinaInput" type="number" placeholder="Unesite površinu (u metrima^2)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>km^2:</p>
+                                <div id="km2pretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>ha:</p>
+                                <div id="hapretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>dm^2: </p>
+                                <div id="dm2pretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>cm^2: </p>
+                                <div id="cm2pretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>mm^2: </p>
+                                <div id="mm2pretvorba"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <div class="details">
+                <details>
+                    <summary class="unit">Volumen</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="volumenInput" type="number" placeholder="Unesite volumen (u litrima-dm^3)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>m^3:</p>
+                                <div id="m3pretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>hl:</p>
+                                <div id="hlpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>cm^3: </p>
+                                <div id="cm3pretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>mm^3: </p>
+                                <div id="mm3pretvorba"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <div class="details">
+                <details>
+                    <summary class="unit">Brzina</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="brzinaInput" type="number" placeholder="Unesite brzinu (u m/s)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>km/s:</p>
+                                <div id="kmspretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>km/h:</p>
+                                <div id="kmhpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>milja/h: </p>
+                                <div id="mhpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>morskih milja/h: </p>
+                                <div id="mmhpretvorba"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <div class="details">
+                <details>
+                    <summary class="unit">Pritisak</summary>
+                    <form action="">
+                        <div class="forma">
+                            <input id="pritisakInput" type="number" placeholder="Unesite pritisak (u paskalima)">
+                        </div>
+                    </form>
+                    <div class="output">
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>kbar:</p>
+                                <div id="kbarpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>bar:</p>
+                                <div id="barpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>mbar:</p>
+                                <div id="mbarpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>at:</p>
+                                <div id="atpretvorba"></div>
+                            </div>
+                        </div>
+                        <div id="pretvorba">
+                            <div class="pretvorba-block">
+                                <p>atm: </p>
+                                <div id="atmpretvorba"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container1">¸
+    <div class="oznake">
+        <div class="znacenje">
+            <h2>Značenje oznaka</h2>
+        </div>
+        <div class="gridovi">
+            <div class="grid">
+                <h3>Dužina</h3>
+                <p>km - Kilometar <br> dm - Decimetar <br>
+                cm - Centimetar <br> mm - Milimetar
+                </p>
+            </div>
+            <div class="grid">
+                <h3>Masa</h3>
+                <p>t - Tona <br> dkg - Dekagram <br>
+                gr - Gram <br> mg - Miligram
+                </p>
+            </div>
+            <div class="grid">
+                <h3>Površina</h3>
+                <p>km^2 - Kvadratni kilometar <br>  ha - Hektar <br> dm^2 - Kvadratni decimetar<br>
+                cm^2 - Kvadratni centimetar <br> mm^2 - Kvadratni milimetar
+                </p>
+            </div>
+            <div class="grid">
+                <h3>Volumen</h3>
+                <p>m^3 - Kubni metar <br> hl - Hektolitar <br> 
+                cm^3 - Kubni centimetar <br> mm^3 - Kubni milimetar
+                </p>
+            </div>
+            <div class="grid">
+                <h3>Brzina</h3>
+                <p>km/s - Kilometara u sekundi <br> km/h - Kilometara na sat <br>
+                milja/h - Milja na sat <br> morskih milja/h - Morskih milja na sat
+                </p>
+            </div>
+            <div class="grid">
+                <h3>Pritisak</h3>
+                <p>kbar - Kilobar <br> bar - Bar <br>
+                mbar - Milibar <br> at - Tehnička atmosfera <br> atm - Atmosfera
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="footer">
+    <div class="content">
+        <h4>Softversko inženjerstvo UNZE </h4> 
+        <p> www.konverterbymuhamed.com <br>
+        Sva prava zadržana &copy; 2020 </p>
+    </div>
+</div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
